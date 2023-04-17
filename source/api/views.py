@@ -55,3 +55,15 @@ class ProjectDetailApiView(APIView):
         project = get_object_or_404(Project, pk=pk)
         serializer = ProjectSerializer(project)
         return Response(serializer.data)
+
+
+class ProjectUpdateApiView(APIView):
+    def put(self, request, pk):
+        project = get_object_or_404(Project, pk=pk)
+        serializer = ProjectSerializer(project, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_200_OK)
+        else:
+            return Response(serializer.errors)
+
