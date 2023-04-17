@@ -60,7 +60,8 @@ class Issue(models.Model):
     project = models.ForeignKey(
         to='homework62.Project',
         on_delete=models.PROTECT,
-        default=1
+        default=1,
+        null=True
     )
 
     def delete(self, using=None, keep_parents=False):

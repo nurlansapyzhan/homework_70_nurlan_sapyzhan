@@ -67,3 +67,14 @@ class ProjectUpdateApiView(APIView):
         else:
             return Response(serializer.errors)
 
+
+class ProjectDeleteApiView(APIView):
+    def delete(self, request, pk):
+        project = get_object_or_404(Project, pk=pk)
+        issues = Issue.objects.filter(project=project)
+        for issue in issues:
+            issue.project = None
+            issue.save()
+        project.delete()
+        serializer = ProjectSerializer(project)
+        return Response({"project_pk": "deleted"})
