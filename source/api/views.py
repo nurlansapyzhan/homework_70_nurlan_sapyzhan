@@ -48,3 +48,10 @@ class ProjectListApiView(APIView):
         projects = Project.objects.all()
         serializer = ProjectSerializer(projects, many=True)
         return Response(serializer.data)
+
+
+class ProjectDetailApiView(APIView):
+    def get(self, request, pk):
+        project = get_object_or_404(Project, pk=pk)
+        serializer = ProjectSerializer(project)
+        return Response(serializer.data)
