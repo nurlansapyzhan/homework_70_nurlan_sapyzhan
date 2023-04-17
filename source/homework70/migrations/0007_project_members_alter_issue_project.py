@@ -9,7 +9,7 @@ class Migration(migrations.Migration):
 
     dependencies = [
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
-        ('homework62', '0006_alter_issue_project'),
+        ('homework70', '0006_alter_issue_project'),
     ]
 
     operations = [
@@ -21,6 +21,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='issue',
             name='project',
-            field=models.ForeignKey(default=1, on_delete=django.db.models.deletion.PROTECT, to='homework62.project'),
+            field=models.ForeignKey(default=1, on_delete=django.db.models.deletion.PROTECT, to='homework70.project'),
         ),
     ]

@@ -4,8 +4,8 @@ from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from homework62.forms import IssueForm
-from homework62.models import Issue, Project
+from homework70.forms import IssueForm
+from homework70.models import Issue, Project
 
 from api.serializers import IssueSerializer, ProjectSerializer
 

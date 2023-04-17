@@ -5,9 +5,9 @@ from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse, reverse_lazy
 from django.views.generic import ListView, DetailView, CreateView, DeleteView, UpdateView
 
-from homework62.models import Project, Issue
+from homework70.models import Project, Issue
 
-from homework62.forms import ProjectForm, IssueProjectForm
+from homework70.forms import ProjectForm, IssueProjectForm
 
 
 class ProjectsView(ListView):
@@ -43,7 +43,7 @@ class ProjectCreate(UserPassesTestMixin, CreateView):
         return reverse('project_detail', kwargs={'pk': self.object.pk})
 
     def test_func(self):
-        return self.request.user.has_perm('homework62.add_project')
+        return self.request.user.has_perm('homework70.add_project')
 
 
 class IssueProjectCreate(UserPassesTestMixin, CreateView):
@@ -67,7 +67,7 @@ class IssueProjectCreate(UserPassesTestMixin, CreateView):
 
     def test_func(self):
         return self.request.user in self.get_object().members.all() and self.request.user.has_perm(
-            'homework62.add_task')
+            'homework70.add_task')
 
 
 def add_project_member(request, pk):
@@ -102,7 +102,7 @@ class ProjectDeleteView(UserPassesTestMixin, DeleteView):
     success_url = reverse_lazy('index')
 
     def test_func(self):
-        return self.request.user.has_perm('homework62.delete_project')
+        return self.request.user.has_perm('homework70.delete_project')
 
 
 class ProjectUpdateView(UserPassesTestMixin, UpdateView):
@@ -113,4 +113,4 @@ class ProjectUpdateView(UserPassesTestMixin, UpdateView):
     success_url = reverse_lazy('index')
 
     def test_func(self):
-        return self.request.user.has_perm('homework62.change_project')
+        return self.request.user.has_perm('homework70.change_project')

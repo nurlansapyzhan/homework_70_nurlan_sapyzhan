@@ -1,6 +1,6 @@
 from django import forms
 
-from homework62.models import Issue, Type, Project
+from homework70.models import Issue, Type, Project
 
 
 class IssueForm(forms.ModelForm):

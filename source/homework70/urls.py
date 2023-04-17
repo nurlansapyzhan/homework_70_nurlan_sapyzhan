@@ -1,10 +1,10 @@
 from django.urls import path
 
-from homework62.views.base import IndexView, IndexRedirectView
+from homework70.views.base import IndexView, IndexRedirectView
 
-from homework62.views.issues import IssueDetail, IssueUpdateView, IssueDeleteView
+from homework70.views.issues import IssueDetail, IssueUpdateView, IssueDeleteView
 
-from homework62.views.projects import ProjectsView, ProjectDetail, ProjectCreate, IssueProjectCreate, \
+from homework70.views.projects import ProjectsView, ProjectDetail, ProjectCreate, IssueProjectCreate, \
     add_project_member, delete_project_member, ProjectDeleteView, ProjectUpdateView
 
 urlpatterns = [

@@ -1,7 +1,7 @@
 from django.contrib.auth.models import User
 from rest_framework import serializers
 
-from homework62.models import Issue, Status, Type, Project
+from homework70.models import Issue, Status, Type, Project
 
 
 class UserSerializer(serializers.ModelSerializer):

@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from homework62.models import Issue, Project, Status, Type
+from homework70.models import Issue, Project, Status, Type
 
 
 # Register your models here.

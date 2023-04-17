@@ -3,8 +3,8 @@ from django.shortcuts import redirect
 from django.urls import reverse, reverse_lazy
 from django.views.generic import DetailView, UpdateView, DeleteView
 
-from homework62.forms import IssueForm
-from homework62.models import Issue
+from homework70.forms import IssueForm
+from homework70.models import Issue
 
 
 class IssueDetail(DetailView):
@@ -27,7 +27,7 @@ class IssueUpdateView(UserPassesTestMixin, UpdateView):
 
     def test_func(self):
         return self.request.user in self.get_object().project.members.all() and self.request.user.has_perm(
-            'homework62.change_issue')
+            'homework70.change_issue')
 
 
 class IssueDeleteView(UserPassesTestMixin, DeleteView):
@@ -38,4 +38,4 @@ class IssueDeleteView(UserPassesTestMixin, DeleteView):
 
     def test_func(self):
         return self.request.user in self.get_object().project.members.all() and self.request.user.has_perm(
-            'homework62.delete_issue')
+            'homework70.delete_issue')
