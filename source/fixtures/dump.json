@@ -1,0 +1,516 @@
+[
+{
+  "model": "homework62.status",
+  "pk": 1,
+  "fields": {
+    "name": "New"
+  }
+},
+{
+  "model": "homework62.status",
+  "pk": 2,
+  "fields": {
+    "name": "In Progress"
+  }
+},
+{
+  "model": "homework62.status",
+  "pk": 3,
+  "fields": {
+    "name": "Done"
+  }
+},
+{
+  "model": "homework62.issuetype",
+  "pk": 1,
+  "fields": {
+    "issue": 2,
+    "type": 1
+  }
+},
+{
+  "model": "homework62.issuetype",
+  "pk": 2,
+  "fields": {
+    "issue": 8,
+    "type": 3
+  }
+},
+{
+  "model": "homework62.issuetype",
+  "pk": 3,
+  "fields": {
+    "issue": 13,
+    "type": 1
+  }
+},
+{
+  "model": "homework62.issuetype",
+  "pk": 4,
+  "fields": {
+    "issue": 14,
+    "type": 2
+  }
+},
+{
+  "model": "homework62.issuetype",
+  "pk": 5,
+  "fields": {
+    "issue": 15,
+    "type": 1
+  }
+},
+{
+  "model": "homework62.issuetype",
+  "pk": 6,
+  "fields": {
+    "issue": 15,
+    "type": 2
+  }
+},
+{
+  "model": "homework62.issuetype",
+  "pk": 7,
+  "fields": {
+    "issue": 16,
+    "type": 1
+  }
+},
+{
+  "model": "homework62.issuetype",
+  "pk": 8,
+  "fields": {
+    "issue": 16,
+    "type": 3
+  }
+},
+{
+  "model": "homework62.issuetype",
+  "pk": 9,
+  "fields": {
+    "issue": 17,
+    "type": 1
+  }
+},
+{
+  "model": "homework62.issuetype",
+  "pk": 10,
+  "fields": {
+    "issue": 17,
+    "type": 2
+  }
+},
+{
+  "model": "homework62.issuetype",
+  "pk": 11,
+  "fields": {
+    "issue": 17,
+    "type": 3
+  }
+},
+{
+  "model": "homework62.issuetype",
+  "pk": 12,
+  "fields": {
+    "issue": 18,
+    "type": 1
+  }
+},
+{
+  "model": "homework62.issuetype",
+  "pk": 13,
+  "fields": {
+    "issue": 18,
+    "type": 3
+  }
+},
+{
+  "model": "homework62.issuetype",
+  "pk": 14,
+  "fields": {
+    "issue": 19,
+    "type": 2
+  }
+},
+{
+  "model": "homework62.issuetype",
+  "pk": 15,
+  "fields": {
+    "issue": 20,
+    "type": 1
+  }
+},
+{
+  "model": "homework62.issuetype",
+  "pk": 16,
+  "fields": {
+    "issue": 20,
+    "type": 2
+  }
+},
+{
+  "model": "homework62.issuetype",
+  "pk": 17,
+  "fields": {
+    "issue": 20,
+    "type": 3
+  }
+},
+{
+  "model": "homework62.issuetype",
+  "pk": 18,
+  "fields": {
+    "issue": 21,
+    "type": 2
+  }
+},
+{
+  "model": "homework62.issuetype",
+  "pk": 19,
+  "fields": {
+    "issue": 22,
+    "type": 1
+  }
+},
+{
+  "model": "homework62.issuetype",
+  "pk": 20,
+  "fields": {
+    "issue": 22,
+    "type": 3
+  }
+},
+{
+  "model": "homework62.issuetype",
+  "pk": 21,
+  "fields": {
+    "issue": 23,
+    "type": 1
+  }
+},
+{
+  "model": "homework62.issuetype",
+  "pk": 22,
+  "fields": {
+    "issue": 23,
+    "type": 2
+  }
+},
+{
+  "model": "homework62.issuetype",
+  "pk": 23,
+  "fields": {
+    "issue": 24,
+    "type": 1
+  }
+},
+{
+  "model": "homework62.issuetype",
+  "pk": 24,
+  "fields": {
+    "issue": 24,
+    "type": 3
+  }
+},
+{
+  "model": "homework62.issuetype",
+  "pk": 25,
+  "fields": {
+    "issue": 25,
+    "type": 3
+  }
+},
+{
+  "model": "homework62.issuetype",
+  "pk": 26,
+  "fields": {
+    "issue": 26,
+    "type": 1
+  }
+},
+{
+  "model": "homework62.issuetype",
+  "pk": 27,
+  "fields": {
+    "issue": 26,
+    "type": 3
+  }
+},
+{
+  "model": "homework62.issuetype",
+  "pk": 28,
+  "fields": {
+    "issue": 27,
+    "type": 2
+  }
+},
+{
+  "model": "homework62.issue",
+  "pk": 2,
+  "fields": {
+    "summary": "Create issue",
+    "description": "Creat new issue",
+    "status": 1,
+    "created_date": "2023-03-15T17:29:15.320Z",
+    "updated_date": "2023-03-15T17:29:15.320Z",
+    "is_deleted": false,
+    "project": 1
+  }
+},
+{
+  "model": "homework62.issue",
+  "pk": 8,
+  "fields": {
+    "summary": "Create new issue",
+    "description": "asdasd",
+    "status": 2,
+    "created_date": "2023-03-15T17:40:59.258Z",
+    "updated_date": "2023-03-15T17:41:15.176Z",
+    "is_deleted": true,
+    "project": 1
+  }
+},
+{
+  "model": "homework62.issue",
+  "pk": 13,
+  "fields": {
+    "summary": "Aasdasd",
+    "description": "asdasd",
+    "status": 3,
+    "created_date": "2023-03-15T17:48:23.955Z",
+    "updated_date": "2023-03-15T17:48:27.027Z",
+    "is_deleted": true,
+    "project": 1
+  }
+},
+{
+  "model": "homework62.issue",
+  "pk": 14,
+  "fields": {
+    "summary": "Django models",
+    "description": "Fix django models",
+    "status": 2,
+    "created_date": "2023-03-15T17:49:09.667Z",
+    "updated_date": "2023-03-15T17:49:09.667Z",
+    "is_deleted": false,
+    "project": 2
+  }
+},
+{
+  "model": "homework62.issue",
+  "pk": 15,
+  "fields": {
+    "summary": "Bug fix",
+    "description": "fix bugs in issues.py file",
+    "status": 2,
+    "created_date": "2023-03-15T18:53:08.215Z",
+    "updated_date": "2023-03-15T18:53:08.215Z",
+    "is_deleted": false,
+    "project": 1
+  }
+},
+{
+  "model": "homework62.issue",
+  "pk": 16,
+  "fields": {
+    "summary": "Finish homework",
+    "description": "Finish homework №61",
+    "status": 2,
+    "created_date": "2023-03-15T18:53:40.643Z",
+    "updated_date": "2023-03-15T18:53:40.643Z",
+    "is_deleted": false,
+    "project": 1
+  }
+},
+{
+  "model": "homework62.issue",
+  "pk": 17,
+  "fields": {
+    "summary": "Fix models bug",
+    "description": "Fix models.py file bug",
+    "status": 3,
+    "created_date": "2023-03-15T18:54:19.580Z",
+    "updated_date": "2023-03-15T18:54:19.580Z",
+    "is_deleted": false,
+    "project": 2
+  }
+},
+{
+  "model": "homework62.issue",
+  "pk": 18,
+  "fields": {
+    "summary": "Implement functioanry",
+    "description": "Implement functionality that allows users to modify issues",
+    "status": 3,
+    "created_date": "2023-03-15T18:54:44.002Z",
+    "updated_date": "2023-03-15T18:54:44.002Z",
+    "is_deleted": false,
+    "project": 2
+  }
+},
+{
+  "model": "homework62.issue",
+  "pk": 19,
+  "fields": {
+    "summary": "Fix a bug that prevents users from successfully creating a task",
+    "description": "Fix a bug that prevents users from successfully creating a task",
+    "status": 1,
+    "created_date": "2023-03-15T18:55:11.240Z",
+    "updated_date": "2023-03-15T18:55:11.240Z",
+    "is_deleted": false,
+    "project": 2
+  }
+},
+{
+  "model": "homework62.issue",
+  "pk": 20,
+  "fields": {
+    "summary": "Fix a bug in the code that prevents some users from accessing a specific page of the site",
+    "description": "Fix a bug in the code that prevents some users from accessing a specific page of the site",
+    "status": 2,
+    "created_date": "2023-03-15T18:55:35.878Z",
+    "updated_date": "2023-03-15T18:55:35.878Z",
+    "is_deleted": false,
+    "project": 1
+  }
+},
+{
+  "model": "homework62.issue",
+  "pk": 21,
+  "fields": {
+    "summary": "Fix a bug due to which certain users cannot send messages through the feedback form",
+    "description": "Fix a bug due to which certain users cannot send messages through the feedback form",
+    "status": 3,
+    "created_date": "2023-03-15T18:56:12.592Z",
+    "updated_date": "2023-03-15T18:56:12.592Z",
+    "is_deleted": false,
+    "project": 1
+  }
+},
+{
+  "model": "homework62.issue",
+  "pk": 22,
+  "fields": {
+    "summary": "It is necessary to add a new section to the application menu and related functionality",
+    "description": "It is necessary to add a new section to the application menu and related functionality",
+    "status": 1,
+    "created_date": "2023-03-15T18:56:47.908Z",
+    "updated_date": "2023-03-15T18:56:47.908Z",
+    "is_deleted": false,
+    "project": 2
+  }
+},
+{
+  "model": "homework62.issue",
+  "pk": 23,
+  "fields": {
+    "summary": "The application has a bug",
+    "description": "The application has a bug that causes the application to behave unexpectedly. Find out the cause of the error and fix it",
+    "status": 3,
+    "created_date": "2023-03-15T18:57:29.905Z",
+    "updated_date": "2023-03-15T18:57:29.905Z",
+    "is_deleted": false,
+    "project": 1
+  }
+},
+{
+  "model": "homework62.issue",
+  "pk": 24,
+  "fields": {
+    "summary": "Development of a new feature",
+    "description": "Develop a new feature that allows create new issue",
+    "status": 3,
+    "created_date": "2023-03-15T18:57:54.535Z",
+    "updated_date": "2023-03-15T18:57:54.535Z",
+    "is_deleted": false,
+    "project": 1
+  }
+},
+{
+  "model": "homework62.issue",
+  "pk": 25,
+  "fields": {
+    "summary": "English classes",
+    "description": "Attend an English class by the end of the month",
+    "status": 3,
+    "created_date": "2023-03-15T18:58:26.981Z",
+    "updated_date": "2023-03-15T18:58:26.981Z",
+    "is_deleted": false,
+    "project": 1
+  }
+},
+{
+  "model": "homework62.issue",
+  "pk": 26,
+  "fields": {
+    "summary": "Django lessons",
+    "description": "Attend a Django class in Attracrot school",
+    "status": 2,
+    "created_date": "2023-03-15T18:58:50.840Z",
+    "updated_date": "2023-03-15T18:58:50.840Z",
+    "is_deleted": false,
+    "project": 2
+  }
+},
+{
+  "model": "homework62.issue",
+  "pk": 27,
+  "fields": {
+    "summary": "ASDasdasdasd",
+    "description": "asd",
+    "status": 2,
+    "created_date": "2023-03-21T08:52:47.767Z",
+    "updated_date": "2023-03-21T08:52:50.313Z",
+    "is_deleted": true,
+    "project": 1
+  }
+},
+{
+  "model": "homework62.type",
+  "pk": 1,
+  "fields": {
+    "name": "Task"
+  }
+},
+{
+  "model": "homework62.type",
+  "pk": 2,
+  "fields": {
+    "name": "Bug"
+  }
+},
+{
+  "model": "homework62.type",
+  "pk": 3,
+  "fields": {
+    "name": "Enhancement"
+  }
+},
+{
+  "model": "homework62.project",
+  "pk": 1,
+  "fields": {
+    "start_date": "2023-03-13",
+    "end_date": "2023-06-21",
+    "name": "Main project",
+    "description": "Main project",
+    "members": [
+      9,
+      10,
+      1,
+      8
+    ]
+  }
+},
+{
+  "model": "homework62.project",
+  "pk": 2,
+  "fields": {
+    "start_date": "2022-08-16",
+    "end_date": "2023-06-16",
+    "name": "Django Project",
+    "description": "Main Django Project",
+    "members": []
+  }
+}
+]

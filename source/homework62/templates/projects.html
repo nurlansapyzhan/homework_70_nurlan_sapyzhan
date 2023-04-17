@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}
+    Projects
+{% endblock %}
+{% block menu %}
+    {% if perms.homework62.add_project %}
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'project_create' %}">Create Project</a>
+        </li>
+    {% endif %}
+{% endblock %}
+{% block content %}
+    {% for project in projects %}
+        <div class="card mt-2">
+            <div class="card-body">
+                <h5 class="card-title">{{ project.name }}</h5>
+                {% if perms.homework62.delete_project %}
+                    <a href="{% url 'project_delete' project.pk %}" class="btn btn-secondary">Delete project</a>
+                {% endif %}
+                {% if perms.homework62.change_project %}
+                    <a href="{% url 'project_edit' project.pk %}" class="btn btn-secondary">Edit project</a>
+                {% endif %}
+                <a href="{% url 'project_detail' project.pk %}" class="btn btn-secondary">More</a>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}
