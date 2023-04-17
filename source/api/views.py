@@ -24,3 +24,14 @@ class IssueDetailApiView(APIView):
         return Response(serializer.data)
 
 
+class IssueUpdateApiView(APIView):
+    def put(self, request, pk):
+        issue = get_object_or_404(Issue, pk=pk)
+        serializer = IssueSerializer(issue, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_200_OK)
+        else:
+            return Response(serializer.errors)
+
+
