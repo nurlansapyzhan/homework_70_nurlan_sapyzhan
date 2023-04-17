@@ -1,5 +1,6 @@
 from django.contrib.auth.mixins import UserPassesTestMixin
 from django.shortcuts import get_object_or_404
+from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
@@ -13,6 +14,13 @@ class IssueListView(APIView):
     def get(self, request, *args, **kwargs):
         issues = Issue.objects.filter(is_deleted=False)
         serializer = IssueSerializer(issues, many=True)
+        return Response(serializer.data)
+
+
+class IssueDetailApiView(APIView):
+    def get(self, request, pk):
+        issue = get_object_or_404(Issue, pk=pk)
+        serializer = IssueSerializer(issue)
         return Response(serializer.data)
 
 
