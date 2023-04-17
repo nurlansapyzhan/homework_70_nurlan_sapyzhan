@@ -43,3 +43,8 @@ class IssueDeleteAPIView(APIView):
         return Response({"issue_pk": issue.pk})
 
 
+class ProjectListApiView(APIView):
+    def get(self, request, *args, **kwargs):
+        projects = Project.objects.all()
+        serializer = ProjectSerializer(projects, many=True)
+        return Response(serializer.data)
